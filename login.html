@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" name="username">
+        <br>
+        <label for="password">Password:</label><br>
+        <input type="password" />
+        <br>
+
+        <input type="checkbox" name="terms" value="Terms">
+        <label for="terms">Terms of use</label><br>
+        <input type="checkbox" name="subscribe" value="Subscribe">
+        <label for="subscribe">Subscribe</label><br>
+        
+        <!-- RADIO name attribute should be the same value -->
+        <fieldset>
+            <legend>Who you are?</legend>
+            <input type="radio" name="pet" value="Dog" />
+            <label for="dog">Dog</label><br>
+            <input type="radio" name="pet" value="Cat" />
+            <label for="cat">Cat</label><br>
+        </fieldset><br>
+        <textarea name="description" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" />
+    </form>
+    <br>
+    <p><a href="index.html">Back</a></p>
+</body>
+</html>
